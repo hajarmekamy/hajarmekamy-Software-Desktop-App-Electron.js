@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"                                                    />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+        <button id="btn-back">
+        <a class="button button-primary" href="main.html">Back</a>
+      </button>
+      <h4>General Configuration</h4>
+    </header>
+    <main>
+      <section class="left-side">
+        <h6 id="user">User Information</h6>
+        <div class="col-md-13">
+          <div class="md-form">
+            <input
+              type="text"
+              id="userid"
+              class="form-control validate"
+            />
+            <label
+              for="userid"
+              data-error="wrong"
+              data-success="right"
+              >User ID</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="license"
+              class="form-control validate"
+            />
+            <label
+              for="license"
+              data-error="wrong"
+              data-success="right"
+              >License File</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="email"
+              id="email"
+              class="form-control validate"
+            />
+            <label
+              for="email"
+              data-error="wrong"
+              data-success="right"
+              >E-mail</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="password"
+              id="password"
+              class="form-control validate"
+            />
+            <label
+              for="password"
+              data-error="wrong"
+              data-success="right"
+              >Password</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="password"
+              id="password"
+              class="form-control validate"
+            />
+            <label
+              for="password"
+              data-error="wrong"
+              data-success="right"
+              >Confirm Password</label
+            >
+          </div>
+            </div>
+            <h6 id="software-feat">Software Features</h6>
+          <div id="select">
+            <select class="custom-select custom-select-sm">
+              <option selected>Select your profile</option>
+              <option value="vs">VS</option>
+              <option value="bk">BK</option>
+              <option value="md">MD</option>
+            </select>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="cloudsight"
+              checked
+            />
+            <label class="form-check-label" for="cloudsight">Cloud Sight</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="copilot"
+              checket
+            />
+            <label class="form-check-label" for="copilot"
+              >Copilot</label
+            >
+          </div>
+        </div>
+      </section>
+      <section class="middle-side">
+        <div class="col-md-13">
+          <div class="md-form">
+            <h6 id="user">Software Configuration</h6>
+            <div class="md-form">
+              <input
+                type="text"
+                id="hostname"
+                class="form-control validate"
+              />
+              <label
+                for="hostname"
+                data-error="wrong"
+                data-success="right"
+                >Hostname</label
+              >
+            </div>
+            <div class="md-form">
+            <input
+              type="text"
+              id="domainname"
+              class="form-control validate"
+            />
+            <label
+              for="domainname"
+              data-error="wrong"
+              data-success="right"
+              >Domain Name</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="dns"
+              class="form-control validate"
+            />
+            <label
+              for="dns"
+              data-error="wrong"
+              data-success="right"
+              >DNS Name Server(s)</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="mgmtip"
+              class="form-control validate"
+            />
+            <label
+              for="mgmtip"
+              data-error="wrong"
+              data-success="right"
+              ><b>MGMT IP Address</b></label>
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="mgmtdg"
+              class="form-control validate"
+            />
+            <label
+              for="mgmtdg"
+              data-error="wrong"
+              data-success="right"
+              >MGMT Default Gateway</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="ipmiip"
+              class="form-control validate"
+            />
+            <label
+              for="ipmiip"
+              data-error="wrong"
+              data-success="right"
+              ><b>IPMI IP Address</b></label
+            >
+          </div>
+        </div>
+        <div id="button">
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-rounded waves-effect"
+          >
+            Initialize Configuration
+          </button>
+        </div>
+      </section>
+       <section class="right-side">
+        <div class="col-md-13">
+          <div class="md-form">
+            <input
+              type="text"
+              id="ipmidg"
+              class="form-control validate"
+            />
+            <label
+              for="ipmidg"
+              data-error="wrong"
+              data-success="right"
+              >IPMI Default Gateway</label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="rep1ip"
+              class="form-control validate"
+            />
+            <label
+              for="rep1ip"
+              data-error="wrong"
+              data-success="right"
+              ><b>Rep1 IP Address</b></label
+            >
+          </div>
+          <div class="md-form">
+            <input
+              type="text"
+              id="rep1dg"
+              class="form-control validate"
+            />
+            <label
+              for="rep1dg"
+              data-error="wrong"
+              data-success="right"
+              >REP1 Default Gateway</label
+            >
+            <div class="md-form">
+              <input
+                type="text"
+                id="ts"
+                class="form-control validate"
+              />
+              <label
+                for="ts"
+                data-error="wrong"
+                data-success="right"
+                >NTP Time Server(s)</label
+              >
+            </div>
+          </div>
+              <div class="time-zone">
+                <p>Time Zone</p>
+              <select name="timezone_offset" id="timezone-offset" class="span5">
+                <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                <option value="-10:00">(GMT -10:00) Hawaii</option>
+                <option value="-09:50">(GMT -9:30) Taiohae</option>
+                <option value="-09:00">(GMT -9:00) Alaska</option>
+                <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                </select>
+              </div>
+                <div id="eula">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="enduserlicense"
+                      checked
+                    />
+                    <label class="form-check-label" for="enduserlicense"
+                      >Accept EULA</label
+                    >
+                  </div>
+            </div>
+            <div id="save-config">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="save-config"
+                  checked
+                />
+                <label class="form-check-label" for="save-config"
+                  >Save Configuration File</label
+                >
+              </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      window.$ = window.jQuery = require("jquery");
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
+  </body>
+</html>
+
+
+
+
+
+
+

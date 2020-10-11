@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto';
+   background-color: rgb(31, 34, 41);
+   color: white;
+}
+
+
+main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#eula{
+text-align: inherit;
+width: 250px;
+margin-bottom: 5px;
+margin-top: 30px;
+}
+
+.left-side {
+    vertical-align: inherit;
+    float: left;
+    margin-left: 26px;
+    width: 250px;
+}
+
+h4 {
+    height:10px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+}
+ /* #user {
+    text-align: inherit;
+ } */
+
+    #profiles {
+        text-align: inherit;
+        margin-top: 30px;
+    } 
+
+ .radio {
+    text-align: inherit;
+ }
+ 
+ #software-features {
+text-align: inherit;
+margin-top: 70px;
+margin-bottom: 10px;
+ }
+ 
+ .left-side {
+    margin-top: 25px;
+ }
+ .middle-side {
+     float: left;
+     width: 250px;
+ }
+
+ .right-side {
+     float: left;
+     width: 250px;
+     margin-top: 42px;
+ }
+
+ #button {
+     margin-top: 60px;
+     justify-self: center;
+ }
+
+ #select {
+     margin-top: 10px;
+ margin-bottom:20px;
+ }
+
+ #timezone-offset{
+width:100%;
+ }
+
+ .time-zone {
+    margin-top: 50px;
+ }
+ #btn-back {
+     margin: 15px;
+ }
